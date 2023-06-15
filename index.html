@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>QRCode.js demo - Benson Ruan</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href="style/qrcode.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src='js/qrcode.min.js'></script>
+</head>
+  <body>
+      <main>
+          <div class="container mt-3">
+			<div class="text-center col-12">
+				<h1>QRCode.js Demo</h1>
+			</div>
+			<div class="row col-12 ">
+				<div class="col-md-6 col-12 mx-auto">
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<select class="custom-select" id="protocol">
+								<option value="https" selected>https://</option>
+								<option value="http">http://</option>
+							  </select>
+						</div>
+						<input id="url" required type="text" value="bensonruan.com" placeholder="bensonruan.com" class="form-control">
+					  </div>					
+				</div>
+			</div>
+			<div class="row col-12 ">
+				<div class="col-md-6 col-12 mx-auto">
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text">size</span>
+						</div>
+						<input id="size" required type="number" value="256" class="form-control">
+						<div class="input-group-append">
+							<span class="input-group-text">px</span>
+						  </div>
+					</div>					
+				</div>
+			</div>
+			<div class="row col-12 ">
+				<div class="col-md-6 col-12 mx-auto">
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text">level</span>
+						</div>
+						<select id="level" class="custom-select">
+							<option value="L" selected>L - 7% damage</option>
+							<option value="M">M - 15% damage</option>
+							<option value="Q">Q - 25% damage</option>
+							<option value="H">H - 30% damage</option>
+						  </select>
+					</div>					
+				</div>
+			</div>
+			<div class="row col-12 ">
+				<div class="row col-12 col-md-6 mx-auto">
+					<div class="col-12 col-lg-6 p-0">
+						<div class="input-group mb-3 ">
+							<div class="input-group-prepend">
+								<span class="input-group-text lg">background color</span>
+							</div>
+							<input id="background-color" required type="color" value="#ffffff">
+						</div>
+					</div>
+										
+					<div class="col-12 col-lg-6  p-0">
+						<div class="input-group mb-3 ">
+							<div class="input-group-prepend">
+								<span class="input-group-text lg">foreground color</span>
+							</div>
+							<input id="foreground-color" required type="color" value="#000000">
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div class="text-center col-lg-4 col-md-6 col-12 mx-auto">
+				<div id="qrcode"></div>
+			</div>
+			</div>
+		</div>
+	  </main>
+	  <script src="js/qrcode-demo.js"></script>
+	</body>
+</html>

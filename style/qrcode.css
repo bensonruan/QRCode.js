@@ -1,0 +1,15 @@
+.input-group-prepend,
+.input-group-prepend span{
+    min-width: 100px;
+}
+
+input[type=color]{
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+}
+
+#qrcode{
+    width: 256px;
+    height: 256px;
+}
