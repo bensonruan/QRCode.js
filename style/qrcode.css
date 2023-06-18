@@ -8,6 +8,14 @@ input[type=color]{
     height: 38px;
     cursor: pointer;
 }
+.ml--1{
+    margin-left: -1px;
+}
+
+.input-group>.input-group-prepend:not(:first-child)>.input-group-text{
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius:  0.25rem;
+}
 
 #qrcode{
     width: 256px;
