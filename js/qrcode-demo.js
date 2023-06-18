@@ -17,7 +17,7 @@ function generateQRCode () {
 		document.getElementById("url").focus();
 		return;
 	}
-	url = protocol + "://" + url;
+	url = protocol + url;
 
 	var qrcode = new QRCode(document.getElementById("qrcode"), {
 		text: url,
