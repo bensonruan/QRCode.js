@@ -15,6 +15,10 @@ Point your localhost to the cloned root directory
 
 Browse to http://localhost/index.html 
 
+## Features
+* QR Code generate for website, call phone, sms, email with javascript 
+* Dynamic control QRCode size, color 
+* Function to download and print QR Code 
 
 ## Library
 * [jquery](https://code.jquery.com/jquery-3.3.1.min.js) - JQuery
