@@ -23,3 +23,6 @@ Browse to http://localhost/index.html
 ## Library
 * [jquery](https://code.jquery.com/jquery-3.3.1.min.js) - JQuery
 * [qrcode.js](https://github.com/davidshimjs/qrcodejs) - Cross-browser QRCode generator for javascript
+
+## Support me 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W6METMY)
