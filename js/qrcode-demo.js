@@ -26,7 +26,14 @@ function generateQRCode () {
 		colorDark : foreColor,
 		colorLight : bgColor,
 		correctLevel : QRCode.CorrectLevel[level]
-	});	
+	});
+
+	setTimeout(function() {
+		var imgsource = $("#qrcode").children("img").attr("src");
+		if (imgsource) {
+			$("#download").attr("href", imgsource);
+		}
+	}, 100);
 }
 
 function printQRCode() 
@@ -63,12 +70,6 @@ function printQRCode()
   setTimeout(function(){newWin.close();},10);
 }
 
-$('#qrcode').bind('DOMSubtreeModified', function(){
-	var imgsource = $("#qrcode").children( "img" ).attr('src');
-	if (typeof imgsource  !== "undefined"){
-		$("#download").attr("href", imgsource);
-	}
-  });
 
 $("#url").
   	on("blur", function () {
